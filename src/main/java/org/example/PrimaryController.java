@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
@@ -57,8 +58,7 @@ public class PrimaryController {
 
         // parenthesis case
         int ind = exp.indexOf(")");
-        if (ind != -1)
-        {
+        if (ind != -1) {
             // ind is the index of the first ')' and the loop finds the matching '('
             int lp = ind - 1;
             while (exp.charAt(lp) != '(')
@@ -72,15 +72,14 @@ public class PrimaryController {
             return calculate(exp.substring(0, ind)) + calculate(exp.substring(ind + 1));
 
         // - case: we only want to execute cases of num1 - num2 (not -"exp" or num1 *-num2)
-        for (int i = 1; i < exp.length(); i = Math.max(i + 1, ind))
-        {
+        for (int i = 1; i < exp.length(); i = Math.max(i + 1, ind)) {
             ind = exp.indexOf("-", i);
-            if (ind != -1 && exp.charAt(ind - 1) != '*' && exp.charAt(ind - 1) != '/')
+            if (ind != -1 && exp.charAt(ind - 1) != 'X' && exp.charAt(ind - 1) != '/')
                 return calculate(exp.substring(0, ind)) - calculate(exp.substring(ind + 1));
         }
         // case of -num. (by the program structure and the if statement There won't be any other operators in the string)
         ind = exp.indexOf("-");
-        if (ind != -1 && !exp.contains("*") && !exp.contains("/"))
+        if (ind != -1 && !exp.contains("X") && !exp.contains("/"))
             return -calculate(exp.substring(1));
 
         ind = exp.indexOf("X");
