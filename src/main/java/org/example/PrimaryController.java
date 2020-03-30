@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -28,7 +30,7 @@ public class PrimaryController {
     }
 
     @FXML
-    void onCEClick() {
+    void onCClick() {
         outputTF.setText("");
     }
 
@@ -38,6 +40,21 @@ public class PrimaryController {
         if (input.length() > 0)
             outputTF.setText(input.substring(0, input.length() - 1));
     }
+//
+//    @FXML
+//    public void handleKeyboard(KeyEvent keyEvent) {
+//
+//        switch (keyEvent.getCode())
+//        {
+//            case EQUALS: onEqualClick();
+//            break;
+//            case DELETE: onDELClick();
+//            break;
+//
+//
+//        }
+//
+//    }
 
     private Double calculate(String exp) {
 

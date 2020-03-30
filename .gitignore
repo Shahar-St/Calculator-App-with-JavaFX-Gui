@@ -1,5 +1,5 @@
 /src/main/java/module-info.java
 /.idea
 target
-pom.xml
 /CalculatorAppGui.iml
+/dependency-reduced-pom.xml
