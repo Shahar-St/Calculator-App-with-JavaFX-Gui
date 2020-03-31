@@ -13,13 +13,13 @@ public class PrimaryController {
     @FXML // fx:id="outputTF"
     private TextField outputTF; // Value injected by FXMLLoader
 
-    @FXML
+    @FXML   // handles nums or operators clicked, add the pressed button to the display
     public void onNumberOperatorClick(ActionEvent actionEvent) {
         Button button = (Button) actionEvent.getSource();
         outputTF.setText(outputTF.getText() + button.getText());
     }
 
-    @FXML
+    @FXML   // handles = clicks, calculate the string from the display
     public void onEqualClick() {
         DecimalFormat numberFormat = new DecimalFormat("0.00000");
         numberFormat.setRoundingMode(RoundingMode.DOWN);
@@ -32,27 +32,12 @@ public class PrimaryController {
         outputTF.setText("");
     }
 
-    @FXML
+    @FXML   // handles del clicks, removes the last digit from the display
     void onDELClick() {
         String input = outputTF.getText();
         if (input.length() > 0)
             outputTF.setText(input.substring(0, input.length() - 1));
     }
-//
-//    @FXML
-//    public void handleKeyboard(KeyEvent keyEvent) {
-//
-//        switch (keyEvent.getCode())
-//        {
-//            case EQUALS: onEqualClick();
-//            break;
-//            case DELETE: onDELClick();
-//            break;
-//
-//
-//        }
-//
-//    }
 
     private Double calculate(String exp) {
 
