@@ -5,9 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
-
 public class PrimaryController {
 
     @FXML // fx:id="outputTF"
@@ -19,12 +16,12 @@ public class PrimaryController {
         outputTF.setText(outputTF.getText() + button.getText());
     }
 
-    @FXML   // handles = clicks, calculate the string from the display
+    @FXML   // handles '=' clicks, calculate the string from the display
     public void onEqualClick() {
-        DecimalFormat numberFormat = new DecimalFormat("0.00000");
-        numberFormat.setRoundingMode(RoundingMode.DOWN);
-        String exp = outputTF.getText();
-        outputTF.setText(numberFormat.format(calculate(exp)));
+        String exp = outputTF.getText().replace(" ", "");
+        double res = ((double) (int) (calculate(exp) * 100000) / 100000);
+        outputTF.setText(String.format("%.5f", res));
+
     }
 
     @FXML
@@ -32,7 +29,8 @@ public class PrimaryController {
         outputTF.setText("");
     }
 
-    @FXML   // handles del clicks, removes the last digit from the display
+    @FXML
+        // handles del clicks, removes the last digit from the display
     void onDELClick() {
         String input = outputTF.getText();
         if (input.length() > 0)
@@ -43,7 +41,8 @@ public class PrimaryController {
 
         // parenthesis case
         int ind = exp.indexOf(")");
-        if (ind != -1) {
+        if (ind != -1)
+        {
             // ind is the index of the first ')' and the loop finds the matching '('
             int lp = ind - 1;
             while (exp.charAt(lp) != '(')
@@ -57,7 +56,8 @@ public class PrimaryController {
             return calculate(exp.substring(0, ind)) + calculate(exp.substring(ind + 1));
 
         // - case: we only want to execute cases of num1 - num2 (not -"exp" or num1 *-num2)
-        for (int i = 1; i < exp.length(); i = Math.max(i + 1, ind)) {
+        for (int i = 1; i < exp.length(); i = Math.max(i + 1, ind))
+        {
             ind = exp.indexOf("-", i);
             if (ind != -1 && exp.charAt(ind - 1) != 'X' && exp.charAt(ind - 1) != '/')
                 return calculate(exp.substring(0, ind)) - calculate(exp.substring(ind + 1));
