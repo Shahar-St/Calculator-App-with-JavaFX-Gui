@@ -1,4 +1,5 @@
-/.idea
-target
-/CalculatorAppGui.iml
-/dependency-reduced-pom.xml
+/target/original-calculator-1.0-SNAPSHOT.jar
+/target/maven-status/
+/target/maven-archiver/
+/target/generated-sources/
+/target/classes/
