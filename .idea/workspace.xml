@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1921b69-ae80-4fe3-aa24-b17972f323f7" name="Default Changelist" comment="added project files">
+    <list default="true" id="e1921b69-ae80-4fe3-aa24-b17972f323f7" name="Default Changelist" comment="fixed pom file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +53,8 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean" />
       <command value="mvn javafx:run" />
+      <command value="mvn clean" />
     </option>
   </component>
   <component name="RunManager">
@@ -89,7 +87,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590697476582</updated>
-      <workItem from="1590697483145" duration="851000" />
+      <workItem from="1590697483145" duration="1217000" />
+      <workItem from="1590762937142" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="added project files">
       <created>1590697869791</created>
@@ -98,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590697869791</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed pom file">
+      <created>1590698578818</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590698578818</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,39 +120,41 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added project files" />
+    <MESSAGE value="fixed pom file" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed pom file" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1590698279665">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1590698708065">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590698279665" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1590698279665">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590698708065" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1590698708065">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590698279665" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1590698279665">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590698708065" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1590698708065">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590698279665" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1590698279665">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590698708065" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1590698708065">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590698279665" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590698708065" />
     <state x="150" y="0" key="SettingsEditor" timestamp="1590697665573">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="150" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590697665573" />
-    <state x="234" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590697879301">
+    <state x="234" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590698584588">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590697879301" />
-    <state x="298" y="151" width="672" height="677" key="run.anything.popup" timestamp="1590698279634">
+    <state x="234" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590698584588" />
+    <state x="298" y="151" width="672" height="677" key="run.anything.popup" timestamp="1590698683871">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="298" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1590698279634" />
+    <state x="298" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1590698683871" />
   </component>
 </project>
